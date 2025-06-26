@@ -4,141 +4,151 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>TraceApp - Tu mejor forma de organizarte</title>
-  <link rel="stylesheet" href="../TraceAPP/CSS/reset.css" />
-  <link rel="stylesheet" href="../TraceAPP/CSS/layout.css" />
-  <link rel="stylesheet" href="../TraceAPP/CSS/components.css" />
-  <link rel="stylesheet" href="../TraceAPP/CSS/main.css" />
+  <link rel="stylesheet" href="../TraceAPP/CSS/reset.css">
+  <link rel="stylesheet" href="../TraceAPP/CSS/layout.css">
+  <link rel="stylesheet" href="CSS/components.css">
+  <link rel="stylesheet" href="../TraceAPP/CSS/main.css">
    <script src="https://kit.fontawesome.com/a79109034d.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="body">
   <header class="header">
-    <div class="container header__content">
-      <img src="img/LOGO_TRACE.png" alt="Logo Trace" class="header__logo" />
+    <div class="header__container">
+      <div class="header__logo">
+        <img src="img/LOGO_TRACE.png" alt="Logo Trace" class="header__logo" />
+      </div>
       <nav class="header__nav">
-        <ul class="nav__list">
-          <li><a href="#">Características</a></li>
-          <li><a href="#">Precios</a></li>
-          <li><a href="#">Iniciar Sesión</a></li>
+        <ul class="header__menu">
+          <li><a href="#features" class="header__link">Características</a></li>
+          <li><a href="#pricing" class="header__link">Precios</a></li>
+          <li><a href="#" class="header__link">Iniciar Sesión</a></li>
         </ul>
+         <a href="#" class="btn btn--primary">Descargar 
+            <i class="fa-solid fa-download" style="color: #ffffff;"></i></a>
       </nav>
-      <a href="#" class="btn btn--primary">Descargar
-      <i class="fa-solid fa-download" style="color: #ffffff;"></i></a>
     </div>
   </header>
 
   <section class="hero">
-    <div class="container hero__content">
-      <div class="hero__text">
-        <h1>Tu vida, simplificada en la palma de tu mano</h1>
-        <p>Con TraceApp, puedes llevar un control detallado de tus finanzas personales de manera fácil y rápida.</p>
-        <div class="hero__buttons">
-          <a href="#" class="btn btn--primary">Ver demo <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i></a>
-
-          <a href="#" class="btn btn--secundary">Descargar <i class="fa-solid fa-download" style="color: #ffffff;"></i></a>
+    <div class="hero__container">
+      <div class="hero__content">
+        <h1 class="hero__title">Tu vida, simplificada en la palma de tu mano</h1>
+        <p class="hero__subtitle">
+          Con TraceApp, puedes llevar un control detallado de tus finanzas personales de manera fácil y rápida.
+        </p>
+        <div class="hero__actions">
+          <a href="#" class="btn">Ver demo <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i></a>
+          <a href="#" class="btn btn--cta">Descargar <i class="fa-solid fa-download" style="color: #ffffff;"></i></a>
         </div>
         <div class="hero__stats">
-          <p><i class="fa-solid fa-users-line fa-xl" style="color: #ffffff;"></i> +200,000 usuarios &nbsp; | &nbsp;<i class="fa-solid fa-earth-americas fa-xl" style="color: #ffffff;"></i> +50 países </p>
+          <div class="hero__stat">
+            <p><i class="fa-solid fa-users-line fa-xl" style="color: #ffffff;"></i> +200,000 usuarios </p>
+          </div>
+          <div class="hero__stat">
+            <p><i class="fa-solid fa-users-line fa-xl" style="color: #ffffff;"></i> +200,000 usuarios &nbsp; | &nbsp;<i class="fa-solid fa-earth-americas fa-xl" style="color: #ffffff;"></i> +50 países</p>
+          </div>
         </div>
       </div>
       <div class="hero__image">
-        <img src="img/1.png" alt="Imagen de la app" />
+        <img src="./img/1.png" alt="Imagen de la App trace" />
       </div>
     </div>
   </section>
 
-  <section class="features">
-    <div class="container">
-      <h2 class="features__title">Características</h2>
-      <br>
-    <div class="features__grid">
-    <div class="features__image">
-    <img src="img/4.png" alt="Características"
-      class="features__image">
-    </div>
-
+  <section class="features" id="features">
+    <h2 class="features__title">Características</h2>
+    <div class="features__container">
+      <div class="features__image">
+        <img src="img/4.png" alt="Captura de las características de la App" />
+      </div>
       <div class="features__list">
-        <div class="feature-box feature-box--main">
-          <h3>Velocidad al acceso</h3>
-          <p>Acceso rápido y sencillo a lo que necesitas.</p>
+        <div class="feature feature--highlight">
+          <div>
+            <h3 class="feature__title">Velocidad al acceso</h3>
+            <p class="feature__desc">Acceso rápido y sencillo a lo que necesitas.</p>
+          </div>
         </div>
-        <div class="feature-box">
-          <h3>Seguimiento en tiempo real</h3>
-          <p>Controla tus gastos y hábitos financieros.</p>
+        <div class="feature">
+          <div class="feature__icon">🔒</div>
+          <div>
+            <h3 class="feature__title">Seguimiento en tiempo real</h3>
+            <p class="feature__desc">Controla tus gastos y hábitos financieros.</p>
+          </div>
         </div>
-        <div class="feature-box">
-          <h3>Informes inteligentes</h3>
-          <p>Analiza tu progreso con reportes visuales increibles.</p>
-        </div>
-        <div class="feature-box">
-          <h3>Seguridad garantizada</h3>
-          <p>Tus datos protegidos con cifrado  muy avanzado.</p>
+        <div class="feature">
+          <div class="feature__icon">⚡</div>
+          <div>
+            <h3 class="feature__title">Informes inteligentes</h3>
+            <p class="feature__desc">Analiza tu progreso con reportes visuales.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="pricing">
-    <div class="container">
-      <h2 class="features__title">Precios</h2>
-      <div class="pricing__cards">
-        <div class="card">
-          <h3>Intro</h3>
-          <p class="price">$5 <span class="price__unit">USD /mes</span></p>
-          <p>Plan básico para proyectos hobby o prototipos</p>
-          <ul>
-            <li>1,000 Descargas</li>
-            <li>1,000 Subidas</li>
-            <li>1 GB de almacenamiento</li>
-          </ul>
-          <a href="#" class="btn btn--outline">Escoger Plan</a>
-        </div>
-        <div class="card card--highlight">
-          <h3>Personal</h3>
-          <p class="price2">$10 <span class="price__unit">USD / mes</span></p>
-          <p>Plan personal para proyectos pequeños</p>
-          <ul>
-            <li>5,000 Descargas</li>
-            <li>5,000 Subidas</li>
-            <li>5 GB de almacenamiento</li>
-          </ul>
-          <a href="#" class="btn btn--primary">Escoger Plan</a>
-        </div>
-        <div class="card">
-          <h3>Profesional</h3>
-          <p class="price">$15 <span class="price__unit">USD / mes</span></p>
-          <p>Plan para proyectos profesionales o medianos</p>
-          <ul>
-            <li>20,000 Descargas</li>
-            <li>10,000 Subidas</li>
-            <li>8 GB de almacenamiento</li>
-          </ul>
-          <a href="#" class="btn btn--outline">Escoger Plan</a>
-        </div>
-        <div class="card">
-          <h3>Ultimate</h3>
-          <p class="price">$30 <span >USD / mes</span></p>
-          <p>Plan para equipos y proyectos grandes</p>
-          <ul>
-            <li>30,000 Descargas</li>
-            <li>30,000 Subidas</li>
-            <li>30 GB de almacenamiento</li>
-          </ul>
-          <a href="#" class="btn btn--outline">Escoger Plan</a>
-        </div>
+  <section class="pricing" id="pricing">
+    <h2 class="pricing__title">Precios</h2>
+    <div class="pricing__plans">
+      <div class="plan">
+        <h3 class="plan__title">Intro</h3>
+        <p class="plan__price">$5 <span class="plan__price-unit">USD / mes</span></p>
+        <p class="plan__desc">Plan básico para proyectos hobby o prototipos</p>
+        <ul class="plan__features">
+          <li>1,000 Descargas</li>
+          <li>1,000 Subidas</li>
+          <li>1 GB de almacenamiento</li>
+        </ul>
+        <a href="#" class="btn btn--plan">Escoger Plan</a>
+      </div>
+      <div class="plan plan--highlight">
+        <h3 class="plan__title">Personal</h3>
+        <p class="plan__price">$10 <span class="plan__price-unit">USD / mes</span></p>
+        <p class="plan__desc">Plan personal para proyectos pequeños</p>
+        <ul class="plan__features">
+          <li>5,000 Descargas</li>
+          <li>5,000 Subidas</li>
+          <li>5 GB de almacenamiento</li>
+        </ul>
+        <a href="#" class="btn btn--plan btn--cta">Escoger Plan</a>
+      </div>
+      <div class="plan">
+        <h3 class="plan__title">Profesional</h3>
+        <p class="plan__price">$15 <span class="plan__price-unit">USD / mes</span></p>
+        <p class="plan__desc">Plan para proyectos profesionales y comerciales</p>
+        <ul class="plan__features">
+          <li>15,000 Descargas</li>
+          <li>15,000 Subidas</li>
+          <li>15 GB de almacenamiento</li>
+        </ul>
+        <a href="#" class="btn btn--plan">Escoger Plan</a>
+      </div>
+      <div class="plan">
+        <h3 class="plan__title">Ultimate</h3>
+        <p class="plan__price">$30 <span class="plan__price-unit">USD / mes</span></p>
+        <p class="plan__desc">Plan para equipos y proyectos empresariales</p>
+        <ul class="plan__features">
+          <li>40,000 Descargas</li>
+          <li>40,000 Subidas</li>
+          <li>40 GB de almacenamiento</li>
+        </ul>
+        <a href="#" class="btn btn--plan">Escoger Plan</a>
       </div>
     </div>
   </section>
 
   <footer class="footer">
-    <div class="container footer__content">
-      <div><img src="img/LOGO_TRACE.png" alt="Logo Trace" class="header__logo" />
-      <p>&copy; 2025 Trace. Todos los derechos reservados.</p></div>
-      <ul class="footer__links">
-        <li><a href="#">Términos y Condiciones</a></li>
-        <li><a href="#">Política de Privacidad</a></li>
-        <li><a href="#">Trabajos</a></li>
-        <li><a href="#">Soporte & Ayuda</a></li>
-      </ul>
+    <div class="footer__container">
+      <div class="footer__logo">
+        <img src="img/LOGO_TRACE.png" alt="Logo Trace" class="header__logo" />
+      </div>
+      <nav class="footer__nav">
+        <a href="#">Términos y Condiciones</a>
+        <a href="#">Política de Privacidad</a>
+        <a href="#">Trabajos</a>
+        <a href="#">Soporte & Ayuda</a>
+      </nav>
+    </div>
+    <div class="footer__copyright">
+      © 2025 Trace. Todos los derechos reservados.
     </div>
   </footer>
 </body>
