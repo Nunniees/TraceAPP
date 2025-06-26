@@ -1,0 +1,47 @@
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  transition: var(--transition);
+}
+
+.btn--primary {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 0.3rem;
+  text-align: center;
+}
+
+.btn--primary:hover {
+  background-color: #1e293b;
+  background-color: var(--secondary);
+}
+
+.btn--outline {
+  border: 2px;
+  border-radius: 0.3rem;
+  color: white;
+  background-color: var(--primary);
+  text-align: center;
+}
+
+.btn--secundary {
+  border: 2px;
+  border-radius: 0.3rem;
+  color: white;
+  background-color: var(--secondary);
+  text-align: center;
+}
+
+.btn--outline:hover {
+  background-color: white;
+  color: #1e3a8a;
+}
+
+.card .btn {
+  display: block;
+  margin-top: 1rem auto 0 auto;
+}
